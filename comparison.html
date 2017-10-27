@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Visualization Dashboard</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!--additional css  -->
+    <link rel="stylesheet" href="h12.css">
+</head>
+<body>
+<!-- navigation -->
+<nav id="nav"></nav>
+<div class="container-fluid" style="width:85%">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h2>Comparison: Coordinates vs. X</h2>
+                    <hr/>
+                    <p>Click on any plot to get an in-depth analysis.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h4>vs. Max Temperature</h4>
+                    <a href="temp.html"><img class="img-responsive" src="assets\images\globalTemp.png"></a>
+                    <div class="hidden-md hidden-lg"><hr></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h4>vs. Max Humidity</h4>
+                    <a href="humidity.html"><img class="img-responsive" src="assets\images\globalHumidity.png"></a>
+                    <div class="hidden-md hidden-lg"><hr></div>
+                </div>           
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h4>vs. Max Cloudiness</h4>
+                    <a href="cloudiness.html"><img class="img-responsive" src="assets\images\globalCloudiness.png"></a>
+                    <div class="hidden-md hidden-lg"><hr></div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <h4>vs. Wind Speed</h4>
+                    <a href="wind.html"><img class="img-responsive" src="assets\images\globalWindSpeed.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer"></footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $('#nav').load('h12nav.html');
+    $('#footer').load('h12footer.html');
+</script>      
+</body>
+</html>
